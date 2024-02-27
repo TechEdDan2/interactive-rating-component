@@ -1,0 +1,126 @@
+/* CSS Properties */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+#card1,
+#card2 {
+    background-color: var(--Dark-Blue);
+    width: 375px;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+#card2 {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+p {
+    color: var(--Light-Grey);
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+
+/* --------------- */
+/*     Element 1   */
+/* --------------- */
+
+.scoreBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+/* Rounded Buttons */
+button {
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    font-size: 1em;
+    border-radius: 50%;
+    background-color: hsla(216, 12%, 54%, 0.249);
+    color: var(--Light-Grey);
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.score:hover {
+    color: var(--White);
+    background-color: var(--Medium-Grey);
+}
+
+button img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit {
+    background-color: var(--Orange);
+    width: 100%;
+    font-weight: 400;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    color: var(--White);
+    text-transform: uppercase;
+}
+
+#submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+/* --------------- */
+/*     Element 2   */
+/* --------------- */
+
+#card2 img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scoreInfo {
+    font-size: 0.9375rem;
+    color: var(--Orange);
+    background-color: hsla(216, 12%, 54%, 0.249);
+    width: 21ch;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ----------------- */
+/* Attribution Style */
+/* ----------------- */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
